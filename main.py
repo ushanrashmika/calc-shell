@@ -1,6 +1,3 @@
-from audioop import mul
-
-
 def add(a,b):
     return a+b
 
