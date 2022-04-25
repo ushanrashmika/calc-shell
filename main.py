@@ -1,3 +1,5 @@
+history=[]
+
 def add(a,b):
     return a+b
 
@@ -49,15 +51,27 @@ def printAns(data,opp):
         ans=multiply(data[0],data[1])
     elif(opp=='/'):
         ans=devide(data[0],data[1])
-    print("    {0} {1} {2} = {3}".format(data[0],opp,data[1],ans))
+    txt="{0} {1} {2} = {3}".format(data[0],opp,data[1],ans)
+    history.append(txt)
+    print('     '+txt)
 
+def historyShow():
+    if(len(history)>0):
+        print(">...<.HISTORY.>...<")
+        for i in history:
+            print("     "+i)
+    else:
+        print(">...<.HISTORY.>...<")
+        print("No any past calculations...")
 while 1:
     banner()
     o=operation()
-    if(o in ['+','-','*','/','$']):
+    if(o in ['+','-','*','/','$','?']):
         if(o=='$'):
             print(".!.!........EXIT........!.!.")
             exit()
+        elif(o=='?'):
+            historyShow()
     else:
         print("Invalid Operation!.!.!")
         continue
