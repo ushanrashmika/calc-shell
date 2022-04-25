@@ -52,7 +52,7 @@ def printAns(data,opp):
         ans=multiply(data[0],data[1])
     elif(opp=='/'):
         ans=devide(data[0],data[1])
-    print("{0} {1} {2} = {3}".format(data[0],opp,data[1],ans))
+    print("    {0} {1} {2} = {3}".format(data[0],opp,data[1],ans))
 
 while 1:
     banner()
