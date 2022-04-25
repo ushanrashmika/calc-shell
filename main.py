@@ -66,5 +66,5 @@ while 1:
         continue
     data=getData()
     printAns(data,o)
-    input("=>> Press Any Key To Continue")
+    input("=>> Press Any Key To Next Calculation")
     print("_"*22)
