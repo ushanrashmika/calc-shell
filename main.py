@@ -16,4 +16,7 @@ def getData():
 def operation(o):
     return input("Select operation: ")
 
+def banner():
+    print("SHELL-CALCULATOR...")
+
 while 1:
