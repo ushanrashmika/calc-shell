@@ -72,6 +72,8 @@ while 1:
             exit()
         elif(o=='?'):
             historyShow()
+            input("=>> Press Any Key To Next Calculation")
+            continue
     else:
         print("Invalid Operation!.!.!")
         continue
@@ -79,3 +81,6 @@ while 1:
     printAns(data,o)
     input("=>> Press Any Key To Next Calculation")
     print("_"*22)
+
+#Code by Ushan Rashmika
+#2022-04-25
