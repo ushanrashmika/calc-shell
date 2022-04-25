@@ -32,7 +32,7 @@ def printAns(data,opp):
         ans=add(data[0],data[1])
     elif(opp=='-'):
         ans=reduce(data[0],data[1])
-    elif(opp='*'):
+    elif(opp=='*'):
         ans=multiply(data[0],data[1])
     elif(opp=='/'):
         ans=devide(data[0],data[1])
