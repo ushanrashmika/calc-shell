@@ -41,6 +41,7 @@ def printAns(data,opp):
 while 1:
     banner()
     o=operation()
-    # check & add exit func
+    if(o=='$'):
+        print(".!.!................!.!.")
     data=getData()
     printAns(data,o)
