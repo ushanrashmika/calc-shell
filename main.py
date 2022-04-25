@@ -20,3 +20,4 @@ def banner():
     print("SHELL-CALCULATOR...")
 
 while 1:
+    banner()
