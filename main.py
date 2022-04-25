@@ -13,5 +13,7 @@ def devide(a,b):
 def getData():
     return [int(input("Enter first number: ")),int(input("Enter second number: "))]
 
-while 1:
+def operation(o):
+    return input("Select operation: ")
 
+while 1:
